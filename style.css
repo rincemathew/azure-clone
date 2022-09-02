@@ -1,6 +1,117 @@
+:root {
+    --color-white:#fff;
+    --color-gray:#f8f9fa;
+    --color-black:#4c4c51;
+    --color-blue:#0078d4;
+    --common-padding:0 15px;
+    --container-width:90%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+/*** HEADER ***/
+header {
+    height: 54px;
+    width: 100%;
+    background-color: aquamarine;
+}
+/* nav menu */
+
+/*** MAIN CONTENT ***/
+/* explore azure */
+.explore-azure {
+    background-color: var(--color-blue);
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+}
+
+.explore-azure a{
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    align-items: center;
+    text-decoration: none;
+}
+
+.explore-azure:hover {
+    text-decoration: underline;
+}
+
+.explore-azure a::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 1L9 6L4 11' stroke='%23ffffff'/%3E%3C/svg%3E");
+    content: '';
+    background-repeat: no-repeat;
+    margin-left: .2em;
+    width: 12px;
+    height: 12px;
+    display: inline-flex;
+    position: absolute;
+    vertical-align: middle;
+    /* bottom: 3px; */
+}
+
+.explore-azure a:hover::after {
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    margin-left: 0.4em;
+}
+
+
+/*** FOOTER ***/
+
+/***************************************/
+/**** design change less than 1310px ****/
+@media only screen and (max-width: 1310px) {
+/*** HEADER ***/
+/* nav menu */
+    
+/*** MAIN CONTENT ***/
+    
+/*** FOOTER ***/
+    
+}
+
+
+
+/**** design change less than 1080px ****/
+@media only screen and (max-width: 1080px) {
+/*** HEADER ***/
+/* nav menu */
+    
+/*** MAIN CONTENT ***/
+    
+/*** FOOTER ***/
+    
+}
+
+
+
+/**** design change less than 960px ****/
+@media only screen and (max-width: 960px) {
 /*** HEADER ***/
 /* nav menu */
 
 /*** MAIN CONTENT ***/
 
 /*** FOOTER ***/
+
+}
+
+
+/**** for mobile phones ****/
+@media only screen and (max-width: 768px) {
+
+/*** HEADER ***/
+/* nav menu */
+
+/*** MAIN CONTENT ***/
+
+/*** FOOTER ***/
+    
+}
