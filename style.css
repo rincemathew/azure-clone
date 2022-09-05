@@ -4,12 +4,25 @@
     --color-black:#4c4c51;
     --color-blue:#0078d4;
     --common-padding:0 15px;
-    --container-width:90%;
+    --container-width:86.5%;
 }
 
 body {
     margin: 0;
     font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.card {
+    /* background-color: #fff; */
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border-radius: 6px;
+    /* color: #4c4c51; */
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 14%);
 }
 
 
@@ -26,8 +39,9 @@ header {
 .explore-azure {
     background-color: var(--color-blue);
     text-align: center;
-    padding: 12px 0;
+    padding: 12px 15px;
     font-size: 14px;
+    /* vertical-align: middle; */
 }
 
 .explore-azure a{
@@ -37,6 +51,7 @@ header {
     line-height: 1.5;
     align-items: center;
     text-decoration: none;
+    /* vertical-align: bottom; */
 }
 
 .explore-azure:hover {
@@ -47,12 +62,15 @@ header {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 1L9 6L4 11' stroke='%23ffffff'/%3E%3C/svg%3E");
     content: '';
     background-repeat: no-repeat;
+    /* background-position: center; */
+    /* margin-bottom: 0; */
     margin-left: .2em;
     width: 12px;
     height: 12px;
     display: inline-flex;
     position: absolute;
     vertical-align: middle;
+    /* box-sizing: inherit; */
     /* bottom: 3px; */
 }
 
@@ -62,10 +80,78 @@ header {
     margin-left: 0.4em;
 }
 
+/* AZURE. INVENT WITH PURPOSE. */
+.body-banner {
+    
+}
+
+.banner {
+    background-size: cover;
+    /* background-position: center; */
+    /* position: relative; */
+    /* object-fit: cover; */
+    height: 100vh;
+    width: auto;
+    background-position: center;
+    overflow: hidden;
+    background-image: url('https://azurecomcdn.azureedge.net/cvt-fd2414f5ea9d56832851d60ff2d20c3d07cf2953323fd82ec078346eaee0781f/images/page/home/hero-desktop.webp');
+}
+
+.banner-img {
+    
+}
+
+/* .banner img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+} */
+
+.body-banner-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner-text {
+    width: var(--container-width);
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 50%; */
+}
+
+/* On-premises, hybrid, multicloud, or at the edge—create secure, future-ready cloud solutions on Azure */
+.body-on-premise {
+    /* width: var(--container-width); */
+    display: flex;
+    justify-content: center;
+}
+
+.on-premise {
+    width: var(--container-width);
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.on-premise-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 24px;
+}
+
+.on-premise-grid1 {
+    grid-row-start: 1;
+  grid-row-end: 3;
+}
+
 
 /*** FOOTER ***/
 
 /***************************************/
+
 /**** design change less than 1310px ****/
 @media only screen and (max-width: 1310px) {
 /*** HEADER ***/
