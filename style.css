@@ -1,7 +1,8 @@
 :root {
     --color-white:#fff;
-    --color-gray:#f8f9fa;
-    --color-black:#4c4c51;
+    /* --color-gray:#f8f9fa; */
+    --color-gray:#4c4c51;
+    --color-black:#000000;
     --color-blue:#0078d4;
     --common-padding:0 15px;
     --container-width:86.5%;
@@ -10,6 +11,30 @@
 body {
     margin: 0;
     font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-justify-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
 }
 
 .card {
@@ -28,11 +53,105 @@ body {
 
 /*** HEADER ***/
 header {
-    height: 54px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: var(--color-white);
+    color: var(--color-gray);
 }
+
+.header-container {
+    width: var(--container-width);
+}
+
 /* nav menu */
+.header-container nav:first-child {
+    /* padding: 0 12px; */
+}
+
+.header-container img {
+    height: 24px;
+    float: left;
+}
+
+.header-name {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 0 0 24px;
+    color: var(--color-black);
+    /* color: #1a1a1f; */
+}
+
+.header-container ul {
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header-container ul a {
+    border-style:dashed;
+    border-width: 1px;
+    padding: 0 6px 0 0;
+}
+
+.nav-button {
+    all: unset;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 16px 7px 16px 6px;
+}
+.nav-button2 {
+    all: unset;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 16px 7px 16px 6px;
+}
+
+.nav-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 1L9 6L4 11' stroke='black'/%3E%3C/svg%3E");
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin: 5px 0 0 4px;
+    transform:rotate(90deg);
+    display: inline-block;
+    position: absolute;
+}
+
+.nav-second {
+    display: flex; 
+    justify-content: flex-end; 
+    width: 100%;
+}
+
+.nav-form input {
+    color: var(--color-gray);
+    border-radius: 4px;
+    font-size: 13px;
+    padding-left: 12px;
+    padding-right: 24px;
+    min-height: 32px;
+    border: 1px solid #747479;
+}
+
+
+.nav-form button {
+    /* all: unset; */
+    background: url("./assets/search.png");
+    height: 20px;
+    width: 20px;
+    /* background-repeat: no-repeat; */
+    /* background-position: 12px 12px; */
+    /* margin-bottom: 0; */
+    
+}
+
+
+
+
+
 
 /*** MAIN CONTENT ***/
 /* explore azure */
@@ -144,7 +263,7 @@ header {
 
 .on-premise-grid1 {
     grid-row-start: 1;
-  grid-row-end: 3;
+    grid-row-end: 3;
 }
 
 
