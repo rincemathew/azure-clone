@@ -12,48 +12,69 @@
 
     <header>
         <div class="flex-justify-item">
-            <div class="header-container flex-justify-item">
-                <nav class="flex-item">
+            <div class="header-container flex-item">
+                <nav style="caret-color: transparent;" class="flex-item">
                     <div class="flex-item">
                         <a href="#"><img src="//azurecomcdn.azureedge.net/cvt-0747fe673b2e8ca5993409bc08d252e543aa7f50e5fa3d6409c621fbdd48b5c7/images/icon/favicon.ico"></a>
                         <a class="header-name" href="">Azure</a>
                     </div>
-                    <ul><a>
-                        <li>
+                    <ul class="first-ul" id="first-ul">
+                        <a href="#ul1" id="ul1"><li>
                             <button class="nav-button">Explore</button>
-                            <div class="dropdown"></div>
-                        </li>
-                        </a>
-                        
-                        <li>
+                            <div class="dropdown-container">
+                                <div class="dropdown">
+                                    <div style="padding: 40px 20px;">
+                                        <h2>Explore Azure</h2>
+                                        <div style="display: grid; column-gap: 40px; row-gap: 20px;">
+                                            <div>
+                                                <!-- <a>sdfsd</a> -->
+                                                <p>sdfsdfsdf</p>
+                                            </div>
+                                            <div>sdfsd</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li></a>
+                        <a href="#ul2" id="ul2"><li>
                             <button class="nav-button">Products</button>
-                            <div class="dropdown"></div>
-                        </li>
-                        <li>
+                            <div class="dropdown-container">
+                                <div class="dropdown">Not implemented check the first nav item</div>
+                            </div>
+                        </li></a>
+                        <a href="#ul3" id="ul3"><li>
                             <button class="nav-button">Solutions</button>
-                            <div class="dropdown"></div>
-                        </li>
-                        <li>
+                            <div class="dropdown-container">
+                                <div class="dropdown">Not implemented check the first nav item</div>
+                            </div>
+                        </li></a>
+                        <a href="#ul4" id="ul4"><li>
                             <button class="nav-button">Pricing</button>
-                            <div class="dropdown"></div>
-                        </li>
-                        <li>
+                            <div class="dropdown-container">
+                                <div class="dropdown">Not implemented check the first nav item</div>
+                            </div>
+                        </li></a>
+                        <a href="#ul5" id="ul5"><li>
                             <button class="nav-button">Partners</button>
-                            <div class="dropdown"></div>
-                        </li>
-                        <li>
+                            <div class="dropdown-container">
+                                <div class="dropdown">Not implemented check the first nav item</div>
+                            </div>
+                        </li></a>
+                        <a href="#ul6" id="ul6"><li>
                             <button class="nav-button">Resources</button>
-                            <div class="dropdown"></div>
-                        </li>
+                            <div class="dropdown-container">
+                                <div class="dropdown">Not implemented check the first nav item</div>
+                            </div>
+                        </li></a>
                     </ul>
                 </nav>
                 <div class="nav-second">
                     <div class="flex-item">
                         <form class="nav-form">
-                            <div>
-                                <input type="text" placeholder="Search">
-                                <button style="content: '\e721';">a</button>
-                                <button>*</button>
+                            <div class="flex-item">
+                                <input onfocus="searchBarFocus()" onblur="searchBarBlur()" type="text" placeholder="Search">
+                                <button><img src="./assets/search.png"></button>
+                                <button id="search-button-two" style="display: none;"><img src="./assets/close.png"></button>
                             </div>
                         </form>
                         <nav>
@@ -64,7 +85,7 @@
                                     <button class="nav-button2">Support</button></li></a>
                                 <a href="#"><li>
                                     <button class="nav-button2">Contact Sales</button></li></a>
-                                <a href="#"><li>Free account</li></a>
+                                <a href="#"><li class="button-free">Free account</li></a>
                                 <a href="#"><li>
                                     <button class="nav-button2">Sign in</button></li></a>  
                             </ul>
@@ -169,6 +190,6 @@
     </footer>
     
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 </html>
