@@ -285,6 +285,7 @@ header {
 
 .banner {
     background-size: cover;
+    /* object-fit: cover; */
     height: 94vh;
     width: auto;
     background-position: center;
@@ -292,11 +293,12 @@ header {
     background-image: url('https://azurecomcdn.azureedge.net/cvt-fd2414f5ea9d56832851d60ff2d20c3d07cf2953323fd82ec078346eaee0781f/images/page/home/hero-desktop.webp');
 }
 
+
 .banner-img {
     
 }
 
-/* .banner img{
+/* .banner1d img{
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -449,14 +451,22 @@ header {
 /**** design change less than 1080px ****/
 @media only screen and (max-width: 1080px) {
 /*** HEADER ***/
+header {
+    height: 55px;
+}
 
+.header-container nav {
+    display: none;
+}
     
 /*** MAIN CONTENT ***/
 /**************************** AZURE. INVENT WITH PURPOSE. */
 .banner{
-    height: 70vh;
+    background-image: url('https://azurecomcdn.azureedge.net/cvt-823b7f40e8ea591bac8e2d94f02cbf175df12b0687875d24737168063e95621f/images/page/home/hero-tablet.webp');
 }
-    
+.body-banner-text {
+    display: none;
+}
 /*** FOOTER ***/
     
 }
@@ -470,10 +480,14 @@ header {
 
 /*** MAIN CONTENT ***/
 /**************************** AZURE. INVENT WITH PURPOSE. */
-.banner {
-    height: 20vh;
-    width: auto;
-}
+
+/* 
+.banner-text- {
+    width: 100%;
+    position: relative;
+    bottom: 0; 
+    padding: 0 15px;
+} */
 
 
 /*** FOOTER ***/
