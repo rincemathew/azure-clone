@@ -431,6 +431,7 @@ header {
 
 /**************************** On-premises, hybrid, multicloud, or at the edge—create secure, future-ready cloud solutions on Azure */
 .body-on-premise {
+    padding: 60px 0;
     display: flex;
     justify-content: center;
 }
@@ -441,7 +442,8 @@ header {
 
 .on-premise-grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
     column-gap: 30px;
     row-gap: 24px;
 }
@@ -449,6 +451,46 @@ header {
 .on-premise-grid1 {
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.on-premise-heading {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+.on-premise-grid1 {
+    padding: 24px;
+}
+
+.on-premise-grid2,.on-premise-grid3 {
+    /* padding: 24px 24px 24px 0px; */
+    display: flex;
+    align-items: center;
+}
+
+.on-premise-grid2 div:nth-child(2),.on-premise-grid3 div:nth-child(2) {
+    padding: 24px 24px 24px 0px;
+}
+
+/**************************** ukgjh */
+
+/**************************** fghg */
+
+/**************************** Accelerate your migration and modernisation with Azure */
+.tools {
+    background-color: #f8f9fa;
+}
+.tools-body {
+    width: var(--container-width);
+    padding: 0 15px;
+}
+.tools-body h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 12px;
 }
 
 
