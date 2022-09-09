@@ -11,7 +11,7 @@ function searchBarBlur() {
     searchButtonTwo.style.display = 'none';
 }
 
-
+//dropdown menu bar
 window.onscroll = function(){
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         document.getElementById("slide-down").className = "slide-down-scroll";
