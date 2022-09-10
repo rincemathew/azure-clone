@@ -1,14 +1,22 @@
-const firstUl = document.getElementById('first-ul');
-const searchButtonTwo = document.getElementById('search-button-two');
+const first_ul = document.getElementById('first-ul');
+const search_button_two = document.getElementById('search-button-two');
+const search_box = document.getElementById('search-box');
+
+
+console.log(azureProducts)
+
+
 
 function searchBarFocus() {
-    firstUl.style.display = 'none';
-    searchButtonTwo.style.display = 'block';
+    first_ul.style.display = 'none';
+    search_button_two.style.display = 'flex';
+    search_box.style.display = 'flex';
+    search_box.style.justifyContent = "flex-end";
 }
 
 function searchBarBlur() {
-    firstUl.style.display = 'flex';
-    searchButtonTwo.style.display = 'none';
+    first_ul.style.display = 'flex';
+    search_button_two.style.display = 'none';
 }
 
 //dropdown menu bar

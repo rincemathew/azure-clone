@@ -10,10 +10,9 @@
 </head>
 <body>
 
-    <header>
-        <div class="flex-justify-item">
-            <div class="header-container flex-item">
-                <nav style="caret-color: transparent;" class="flex-item">
+    <header class="flex-justify-item">
+            <div class="header-container col-d-86 col-1310-100 flex-item">
+                <nav class="flex-item">
                     <div class="flex-item">
                         <a href="#"><img src="//azurecomcdn.azureedge.net/cvt-0747fe673b2e8ca5993409bc08d252e543aa7f50e5fa3d6409c621fbdd48b5c7/images/icon/favicon.ico"></a>
                         <a class="header-name" href="">Azure</a>
@@ -68,7 +67,7 @@
                         </li></a>
                     </ul>
                 </nav>
-                <div class="nav-second">
+                <div id="search-box" class="nav-second">
                     <div class="flex-item">
                         <form class="nav-form">
                             <div class="flex-item">
@@ -77,26 +76,25 @@
                                 <button id="search-button-two" style="display: none;"><img src="./assets/close.png"></button>
                             </div>
                         </form>
-                        <nav>
-                            <ul>
-                                <a href="#"><li>
-                                    <button class="nav-button2">Docs</button></li></a>
-                                <a href="#"><li>
-                                    <button class="nav-button2">Support</button></li></a>
-                                <a href="#"><li>
-                                    <button class="nav-button2">Contact Sales</button></li></a>
-                                <a href="#"><li class="button-free">Free account</li></a>
-                                <a href="#"><li>
-                                    <button class="nav-button2">Sign in</button></li></a>  
-                            </ul>
-                        </nav>
                     </div>
                 </div>
+                <nav class="nav-second">
+                    <ul class="flex-item">
+                        <a href="#"><li>
+                            <button class="nav-button2">Docs</button></li></a>
+                        <a href="#"><li>
+                            <button class="nav-button2">Support</button></li></a>
+                        <a href="#"><li>
+                            <button class="nav-button2">Contact Sales</button></li></a>
+                        <a href="#"><li class="button-free">Free account</li></a>
+                        <a href="#"><li>
+                            <button class="nav-button2">Sign in</button></li></a>  
+                    </ul>
+                </nav>
             </div>
-        </div>
         <!-- slide down bar -->
         <div class="slide-down flex-justify-item" id="slide-down">
-            <div style="padding: 12px 15px;" class="header-container flex-item">
+            <div style="padding: 12px 15px;" class="header-container flex-item col-d-86 col-1310-100">
                 <div class="flex-justify-item">
                     <a href="#"><img src="//azurecomcdn.azureedge.net/cvt-0747fe673b2e8ca5993409bc08d252e543aa7f50e5fa3d6409c621fbdd48b5c7/images/icon/favicon.ico"></a>
                     <a class="header-name" href="">Azure</a>
@@ -253,8 +251,22 @@
         <div style="height: 600px;" class="self-taught">
             See how a self-taught developer helped level the playing field for people with disabilities by creating a video game controller that uses voice and facial cues.
         </div>
-        <div class="chat">
-            chat with sales
+        <div class="azure-support">
+            <div>
+                <img src="https://azurecomcdn.azureedge.net/cvt-fcc108976a7566bce477b6e17822b10a6a9a02ae02ff70b05275ce3e4fe24dbb/svg/pricing06.svg">
+                <h3>Start building on Azure free</h3>
+                <p>Get popular services free for 12 months and 25+ other services free always—plus $200 credit to use in your first 30 days.</p>
+            </div>
+            <div>
+                <img src="https://azurecomcdn.azureedge.net/cvt-fcc108976a7566bce477b6e17822b10a6a9a02ae02ff70b05275ce3e4fe24dbb/images/page/home/icons/icon-chat.svg">
+                <h3>Connect with a sales specialist</h3>
+                <p>Chat with, call or request a call from a sales specialist for personalised guidance.</p>
+            </div>
+            <div>
+                <img src="https://azurecomcdn.azureedge.net/cvt-fcc108976a7566bce477b6e17822b10a6a9a02ae02ff70b05275ce3e4fe24dbb/svg/book-alt.svg">
+                <h3>New to Azure? Microsoft Learn at your own pace</h3>
+                <p>Learn the basics of cloud computing and Azure with self-paced modules on Microsoft Learn.</p>
+            </div>
         </div>
 
     </main>
@@ -273,7 +285,7 @@
 
     </footer>
     
-
+    <script src="array.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
