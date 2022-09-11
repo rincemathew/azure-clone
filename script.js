@@ -19,7 +19,7 @@ function searchBarBlur() {
     search_button_two.style.display = 'none';
 }
 
-//dropdown menu bar
+//dropdown while scrolling - menu bar
 window.onscroll = function(){
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         document.getElementById("slide-down").className = "slide-down-scroll";
@@ -28,3 +28,12 @@ window.onscroll = function(){
       }
 }
 
+//dropdown menu onclick
+function dropdownMenu(id){
+  document.querySelector(`.${id} div`).classList.toggle('dropdown-container-show');
+  document.querySelector(`.${id} button`).classList.toggle('header-arrow-anime');
+  document.querySelector(`.${id}`).classList.toggle('header-bg-line');
+  //   var a = document.querySelector(`.${id} button`);
+  //   var b = window.getComputedStyle(a, ':after')
+  // console.log(b)
+}
