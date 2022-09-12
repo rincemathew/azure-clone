@@ -313,6 +313,7 @@ header .nav-button.header-arrow-anime::after {
 }
 
 .card:hover {
+    cursor: pointer;
     transition: all .2s ease-in-out;
     box-shadow: 0 5px 10px rgb(0 0 0 / 14%);
 }
@@ -459,14 +460,16 @@ header .nav-button.header-arrow-anime::after {
 
 
 /**************************** On-premises, hybrid, multicloud, or at the edge—create secure, future-ready cloud solutions on Azure */
-.body-on-premise {
+.on-premise {
     padding: 60px 0;
-    display: flex;
-    justify-content: center;
 }
 
-.on-premise {
-    width: var(--container-width);
+.on-premise-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 36px 0;
 }
 
 .on-premise-grid {
@@ -482,25 +485,48 @@ header .nav-button.header-arrow-anime::after {
     grid-row-end: 3;
 }
 
-.on-premise-heading {
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.2;
-    margin: 0 0 12px;
-}
-
 .on-premise-grid1 {
     padding: 24px;
 }
 
-.on-premise-grid2,.on-premise-grid3 {
-    /* padding: 24px 24px 24px 0px; */
-    display: flex;
-    align-items: center;
+.on-premise-grid2 div:nth-child(2),.on-premise-grid3 div:nth-child(2) {
+    padding: 24px 24px 24px 12px;
+    /* border: 0; */
+}
+.on-premise-grid2 img,.on-premise-grid3 img {
+    width: 156px;
+    height: auto;
+    /* max-width: 156; */
+    object-fit: contain;
+    border: 0;
 }
 
-.on-premise-grid2 div:nth-child(2),.on-premise-grid3 div:nth-child(2) {
-    padding: 24px 24px 24px 0px;
+.on-premise-grid h2 {
+    color: #0062ad;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.on-premise-grid > div:hover h2 {
+    text-decoration: underline;
+}
+.on-premise-grid h2:hover { color: #002847;}
+.on-premise-grid p {
+    color: #4c4c51;;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.on-premise-button {
+    padding: 62px 39px 24px 39px;
+}
+.on-premise-button div {
+    flex-wrap: wrap;
+}
+.on-premise-button span {
+    font-size: 16px;
+    color: #1a1a1f;
+    font-weight: 600;
 }
 
 /**************************** Start putting your ideas into action with Azure products and services */
@@ -517,8 +543,6 @@ header .nav-button.header-arrow-anime::after {
     flex-wrap: wrap;
     /* margin: 0 -15px 0 0; */
 }
-
-
 
 .tools-body h2 {
     font-size: 36px;
@@ -737,7 +761,6 @@ header {
 } */
 
 /**************************** Accelerate your migration and modernisation with Azure */
-
 .tools-body div:nth-child(2) {
     text-align: center;
 }
@@ -747,6 +770,32 @@ header {
 .button-w-blue {
     width: 100%;
 }
+/**************************** On-premises, hybrid, multicloud, or at the edge—create secure, future-ready cloud solutions on Azure */
+.on-premise-grid {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    /* grid-auto-flow: column; */
+}
+/* .on-premise-grid1 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+} */
+.on-premise-grid1 {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.on-premise-grid img {
+    width: 68px;
+}
+.on-premise-grid1 div:nth-child(2) {
+    padding: 24px 24px 24px 12px;
+}
+.on-premise-button span {
+    padding-bottom: 24px;
+}
+
 /*** FOOTER ***/
 
 }
