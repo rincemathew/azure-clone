@@ -41,9 +41,13 @@ a { text-decoration: none; }
 
 .show { display: block;}
 
+.padd-15 {padding: 0 15px;}
+
 /* responsive */
 .col-d-25 {width: 25%;}
+.col-d-40 {width: 40%;}
 .col-d-50 {width: 50%;}
+.col-d-60 {width: 60%;}
 .col-d-75 {width: 75%;}
 .col-d-86 {width: 86%;}
 .col-d-100 {width: 100%;}
@@ -447,6 +451,7 @@ header .nav-button.header-arrow-anime::after {
 }
 
 .button-w-blue:hover {
+    cursor: pointer;
     transition: color .2s ease-in-out;
     background-color: #0078d4;
     color: var(--color-white);
@@ -508,15 +513,25 @@ header .nav-button.header-arrow-anime::after {
     padding: 60px 0;
 }
 .tools-body {
-    width: var(--container-width);
-    padding: 0 15px;
+    padding: 36px;
+    flex-wrap: wrap;
+    /* margin: 0 -15px 0 0; */
 }
+
+
+
 .tools-body h2 {
     font-size: 36px;
     font-weight: 600;
     line-height: 1.2;
-    margin: 0 0 12px;
+    margin: 0 0 36px 0;
 }
+/* .tools-body div:nth-child(1) {
+    width: 100%;
+}
+.tools-body div:nth-child(2) {
+    width: 100%;
+} */
 
 /**************************** Discover what is happening on Azure */
 .discover {
@@ -693,6 +708,7 @@ header .nav-button.header-arrow-anime::after {
 /**** for mobile phones ****/
 @media only screen and (max-width: 768px) {
 /* responsive */
+.padd-768-0 {padding: 0;}
 .col-768-25 {width: 25%;}
 .col-768-50 {width: 50%;}
 .col-768-75 {width: 75%;}
@@ -710,6 +726,7 @@ header {
 }
 
 
+
 /*** MAIN CONTENT ***/
 /**************************** AZURE. INVENT WITH PURPOSE. */
 /* .banner{
@@ -719,6 +736,17 @@ header {
     height: 90%;
 } */
 
+/**************************** Accelerate your migration and modernisation with Azure */
+
+.tools-body div:nth-child(2) {
+    text-align: center;
+}
+.tools-body h2 {
+    margin: 32px 0 15px 0;
+}
+.button-w-blue {
+    width: 100%;
+}
 /*** FOOTER ***/
 
 }
