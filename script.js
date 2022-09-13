@@ -6,7 +6,7 @@ const search_box = document.getElementById('search-box');
 console.log(azureProducts)
 
 
-
+//search box
 function searchBarFocus() {
     first_ul.style.display = 'none';
     search_button_two.style.display = 'flex';
@@ -36,4 +36,24 @@ function dropdownMenu(id){
   //   var a = document.querySelector(`.${id} button`);
   //   var b = window.getComputedStyle(a, ':after')
   // console.log(b)
+}
+
+//footer dropdown
+var acc = document.querySelectorAll('.footer-nav h3')
+console.log(acc)
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  // console.log(i)
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    // console.log(panel)
+    panel.classList.toggle("showing");
+    // if (panel.style.display === "block") {
+    //   panel.style.display = "none";
+    // } else {
+    //   panel.style.display = "block";
+    // }
+  });
 }
