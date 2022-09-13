@@ -340,7 +340,7 @@ header .nav-button.header-arrow-anime::after {
     text-decoration: underline;
 }
 
-.explore-azure a::after {
+.explore-azure a::after,.self-taught-div a::after {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 1L9 6L4 11' stroke='%23ffffff'/%3E%3C/svg%3E");
     content: '';
     background-repeat: no-repeat;
@@ -352,7 +352,7 @@ header .nav-button.header-arrow-anime::after {
     vertical-align: middle;
 }
 
-.explore-azure a:hover::after {
+.explore-azure a:hover::after,.self-taught-div a:hover::after {
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     margin-left: 0.4em;
@@ -646,8 +646,80 @@ header .nav-button.header-arrow-anime::after {
 
 /**************************** See how a self-taught developer helped level */
 .self-taught {
-    background-image: url('https://azurecomcdn.azureedge.net/cvt-fcc108976a7566bce477b6e17822b10a6a9a02ae02ff70b05275ce3e4fe24dbb/images/page/home/dev-stories/desktop.webp');
-    background-size: cover;
+    position: relative;
+}
+.self-taught img {
+    width: 100%;
+    height: auto;
+}
+.self-taught-div {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: 15px;
+    padding: 24px;
+    border-radius: 6px;
+    background-color: rgba(26,26,31,.94);
+    color: #f8f9fa;
+    width: 60%;
+}
+
+.self-taught-div p {
+    color: #f4f5f6;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.self-taught-div button {
+    background-color: #0078d4;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+    padding: 12px 16px 12px 48px;
+    position: relative;
+    width: auto;
+}
+.self-taught-div button:hover {
+    background-color: #006abb;
+    color: #fff;
+}
+.self-taught-div button:before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #50e6ff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+}
+.self-taught-div button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #0078d4;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 26px;
+}
+.self-taught-div a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 1.5;
+}
+.self-taught-div a:hover {
+    text-decoration: none;
 }
 
 /**************************** azure-support */
@@ -747,6 +819,13 @@ header .nav-button.header-arrow-anime::after {
 
 /**** design change less than 960px ****/
 @media only screen and (max-width: 960px) {
+
+.col-960-25 {width: 25%;}
+.col-960-50 {width: 50%;}
+.col-960-75 {width: 75%;}
+.col-960-86 {width: 86%;}
+.col-960-100 {width: 100%;}
+.col-960-hide {display: none;}
 /*** HEADER ***/
 
 
@@ -772,6 +851,62 @@ header .nav-button.header-arrow-anime::after {
 .g-grid-back p:nth-of-type(2) {
     font-size: 18px;
 
+}
+
+/**************************** See how a self-taught developer helped level */
+/* .self-taught {
+    position: relative;
+}
+.self-taught img {
+    width: 100%;
+    height: auto;
+} */
+.self-taught-div {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin: 0px;
+    padding: 24px;
+    border-radius: 0px;
+    background-color: white;
+    color: #f8f9fa;
+    width: 100%;
+}
+
+.self-taught-div p {
+    color: #242429;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.self-taught-div button {
+    display: none;
+}
+
+.self-taught-div a {
+    background-color: transparent;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    color: #0062ad;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    transition: color .2s ease-in-out;
+    transition-property: background-color;
+    text-decoration: none;
+}
+.self-taught-div a:hover {
+    background-color: #0078d4;
+    color: #f8f9fa;
+    transition: color .2s ease-in-out;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.self-taught-div a::after {
+    background-image: url("");
+    content: '';
 }
 
 /*** FOOTER ***/
