@@ -192,10 +192,10 @@
                     <div class="azure-products-list col-d-75 col-960-100 padd-15">
                         <div class="col-d-25 col-768-100 azure-products-prdt">
                             <ol>
-                                <ul><button class="active-product">Popular</button></ul>
+                                <ul><button onclick="addContent(event,'Popular')" class="active-product">Popular</button></ul>
                                 <div class="azure-products-hide col-d-hide">
                                     <div class="azure-products-item">
-                                        <div class="card azure-products-item-card">
+                                        <!-- <div class="card azure-products-item-card">
                                             <img src="https://azurecomcdn.azureedge.net/cvt-3474992b55ef7111c885a238858dce511933a514e0cae6a566a9fabcad6ff0a1/svg/azure-devops.svg">
                                             <p>Build, train and deploy machine learning</p>
                                             <a>Azure DevOps</a>
@@ -224,21 +224,26 @@
                                             <img src="https://azurecomcdn.azureedge.net/cvt-3474992b55ef7111c885a238858dce511933a514e0cae6a566a9fabcad6ff0a1/svg/azure-devops.svg">
                                             <p>Build, train and deploy machine learning</p>
                                             <a>Azure DevOps</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
-                                <ul><button>Al + machine learning</button></ul>
-                                <ul><button>Compute</button></ul>
-                                <ul><button>Containers</button></ul>
-                                <ul><button>Hybrid + multicloud</button></ul>
-                                <ul><button>Internet of Things(IoT)</button></ul>
+                                <ul><button onclick="addContent(event,'Al + machine learning')">Al + machine learning</button></ul>
+                                <div class="azure-products-hide col-d-hide"></div>
+                                <ul><button onclick="addContent(event,'Compute')">Compute</button></ul>
+                                <div class="azure-products-hide col-d-hide"></div>
+                                <ul><button onclick="addContent(event,'Containers')">Containers</button></ul>
+                                <div class="azure-products-hide col-d-hide"></div>
+                                <ul><button onclick="addContent(event,'Hybrid + multicloud')">Hybrid + multicloud</button></ul>
+                                <div class="azure-products-hide col-d-hide"></div>
+                                <ul><button onclick="addContent(event,'Internet of ThingsIoT')">Internet of Things(IoT)</button></ul>
+                                <div class="azure-products-hide col-d-hide"></div>
                             </ol>
                             <ul>
                                 <li><a>See all products (200+)</a></li>
                             </ul>
                         </div>
-                        <div class="col-d-75 azure-products-item col-768-hide">
-                            <div class="card azure-products-item-card">
+                        <div id="azure-products-item" class="col-d-75 azure-products-item col-768-hide">
+                            <!-- <div class="card azure-products-item-card">
                                 <img src="https://azurecomcdn.azureedge.net/cvt-3474992b55ef7111c885a238858dce511933a514e0cae6a566a9fabcad6ff0a1/svg/azure-devops.svg">
                                 <p>Build, train and deploy machine learning</p>
                                 <a>Azure DevOps</a>
@@ -267,7 +272,7 @@
                                 <img src="https://azurecomcdn.azureedge.net/cvt-3474992b55ef7111c885a238858dce511933a514e0cae6a566a9fabcad6ff0a1/svg/azure-devops.svg">
                                 <p>Build, train and deploy machine learning</p>
                                 <a>Azure DevOps</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div id="azure-product-show-image" class="azure-products-img col-d-25 col-960-100 padd-15">

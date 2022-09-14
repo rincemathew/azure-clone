@@ -3,7 +3,7 @@ const search_button_two = document.getElementById('search-button-two');
 const search_box = document.getElementById('search-box');
 
 
-console.log(azureProducts)
+// console.log(azureProducts)
 
 
 //search box
@@ -69,3 +69,44 @@ azureProductShowImage.addEventListener('click', ()=>{
 azureProductHideImage.addEventListener('click', ()=>{
   azureProductHideImage.style.display = 'none';
 })
+
+//add content to card --tart putting your ideas into action with Azure products and services
+function innerHtmlCall (list){
+  for (var i=0; i < list.length; i++) {
+    // console.log(i)
+    document.getElementById("azure-products-item").innerHTML += `<div class="card azure-products-item-card">
+    <img src="${list[i].img}">
+    <p>${list[i].des}</p>
+    <a>${list[i].name}</a>
+</div>`;
+  }
+}
+
+function addContent(evt, name) {
+  var list;
+  // elementStyle = document.getElementById('azure-product-button-id');
+  allElement = document.querySelectorAll('.azure-products-prdt button');
+  for (var i = 0; i < allElement.length; i++) {
+    allElement[i].classList.remove('active-product');
+  }
+  evt.currentTarget.className += 'active-product';
+  // console.log(elementStyle)
+  // azureProductItemCard = document.querySelectorAll('.azure-products-item-card');
+  // for (var i = 0; i < azureProductItemCard.length; i++) {
+  //   allElement[i].classList.remove('active-product');
+  // }
+
+  for (var i=0; i< azureProducts.length; i++){
+    // console.log(azureProducts[i])
+    if(name == azureProducts[i].item) {
+      list = azureProducts[i].list
+      console.log(list)
+      document.getElementById("azure-products-item").innerHTML = ` `;
+      innerHtmlCall(list);
+      
+      // console.log('sdfds')
+    }
+  
+  }
+}
+innerHtmlCall(azureProducts[0].list)

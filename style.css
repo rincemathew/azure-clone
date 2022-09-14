@@ -1412,6 +1412,9 @@ header {
 .azure-products-item {
     grid-template-columns: 1fr 1fr;
 }
+.azure-products-item:last-child {
+    padding-bottom: 15px;
+}
 
 /**************************** Find out how these customers are innovating with Azure */
 
