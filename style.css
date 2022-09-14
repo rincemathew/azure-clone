@@ -352,7 +352,7 @@ header .nav-button.header-arrow-anime::after {
     vertical-align: middle;
 }
 
-.explore-azure a:hover::after,.self-taught-div a:hover::after {
+.explore-azure a:hover::after,.self-taught-div a:hover::after,.azure-products-prdt ul li a:hover::after {
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     margin-left: 0.4em;
@@ -535,6 +535,198 @@ header .nav-button.header-arrow-anime::after {
 }
 
 /**************************** Start putting your ideas into action with Azure products and services */
+.azure-products {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+.azure-products h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    /* margin: 0 0 12px; */
+}
+.azure-products-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.azure-products-img{
+    padding-left: 36px;
+}
+.azure-products-img:hover{
+    transform: translateX(-36px);
+    transition: transform .5s;
+    cursor: pointer;
+}
+.azure-products-img img {
+    max-height: 530px;
+    border-radius: 12px;
+    background-color: #000;
+    padding: 10%;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 14%);
+
+}
+.azure-products-img button {
+    all: unset;
+    color: #0062ad;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    padding: 0 12px 0 40px;
+
+}
+.azure-products-img button::before {
+    content: '\1F814';
+    /* color: #777; */
+    font-weight: bold;
+    align-items: center;
+    font-size: 20px;
+    float: left;
+    /* line-height: 1; */
+    /* transform: translateY(-2px); */
+
+}
+.hidden-elements {
+    position: fixed;
+    z-index: 99997;
+    padding-top: 96px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,.9);
+}
+.hidden-elements img {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-height: 90vh;
+    max-width: 100%;
+    z-index: 99999;
+    padding: 24px;
+}
+.hidden-elements button {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    color: #fff!important;
+    height: 48px;
+    position: fixed;
+    right: 12px;
+    top: 12px;
+    width: 20px;
+    z-index: 99998;
+}
+.azure-products-list {
+    display: flex;
+}
+.azure-products-prdt ol {
+    padding: 0;
+    margin: 0;
+}
+.azure-products-prdt ul {
+    padding: 5px;
+    margin-right: 5px;
+    border-style: none;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+.azure-products-prdt ul.active-product {
+    border-style: solid;
+}
+.azure-products-prdt button {
+    all: unset;
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    border-left: 4px solid transparent;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+    padding: 12px;
+    /* display: block; */
+    text-decoration: none;
+    width: 100%;
+}
+.azure-products-prdt button.active-product {
+    color: var(--color-black);
+    font-weight: 600;
+    border-left-color: #0062ad;
+}
+.azure-products-prdt button.active-product:hover {
+    color: var(--color-black);
+}
+.azure-products-prdt button:hover {
+    color: #0062ad;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.azure-products-prdt ul li a {
+    color: #0062ad;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+.azure-products-prdt ul li a:hover {
+    color: #4c4c51;
+}
+.azure-products-prdt ul li a::after {
+    content: '>';
+    font-size: 20px;
+    color: #0062ad;
+    /* transform: rotate(180deg); */
+}
+.azure-products-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 24px;
+}
+.azure-products-item-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100%; */
+    /* justify-content: center; */
+    padding: 24px;
+    /* text-align: center; */
+}
+.azure-products-item img {
+    width: 36px;
+    height: 36px;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    flex-grow: 2;
+}
+.azure-products-item p {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    text-align: center;
+    font-size: 16px;
+    color: #4c4c51;
+    flex-grow: 3;
+}
+.azure-products-item a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0062ad;
+    line-height: 1.3;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    flex-grow: 1;
+}
+.azure-products-item:hover a {
+    text-decoration: underline;
+}
+
 
 /**************************** Find out how these customers are innovating with Azure */
 
@@ -800,12 +992,16 @@ footer {
     border-style: solid;
 }
 .svg-icon {
+    cursor: pointer;
     margin-right: 26px;
     height: auto;
     width: 24px;
 }
+.svg-icon img:hover{
+    filter: invert(27%) sepia(10%) saturate(258%) hue-rotate(201deg) brightness(96%) contrast(86%);
+}
 .social div:nth-of-type(1) span:nth-of-type(1){
-    
+
 }
 .social div:nth-of-type(1) span:nth-of-type(2){
     font-size: 14px;
@@ -885,6 +1081,10 @@ footer {
 .footer-mini select option {
     min-height: 1.2em;
     padding: 0px 2px 1px;
+}
+.footer-mini li:last-child a {
+    font-weight: 600;
+    pointer-events: none;
 }
 
 /***************************************/
@@ -985,6 +1185,14 @@ footer {
 
 
 /*** MAIN CONTENT ***/
+/**************************** Start putting your ideas into action with Azure products and services */
+.azure-products h2 {
+    text-align: center;
+}
+
+
+/**************************** Find out how these customers are innovating with Azure */
+
 /**************************** Discover what is happening on Azure */
 .discover-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1135,13 +1343,77 @@ header {
 
 
 /*** MAIN CONTENT ***/
-/**************************** AZURE. INVENT WITH PURPOSE. */
-/* .banner{
-    height: 63vh;
+/**************************** Start putting your ideas into action with Azure products and services */
+.azure-products-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 3%
 }
-.banner-text {
-    height: 90%;
+.azure-products-img{
+    margin-top: 10px;
+    padding-left: 15px;
+    pointer-events: none;
+}
+.azure-products-img button {
+  display: none;
+}
+
+/* .azure-products-prdt ul {
+    padding: 0px;
+    margin-right: 0px;
+    border-style: none;
+    margin-bottom: 5px;
+    list-style-type: none;
 } */
+.azure-products-prdt button {
+  /* transition: all .2s ease-in-out; */
+  /* align-items: center; */
+  /* background-color: #fff; */
+  /* border: 0; */
+  /* border-bottom: 1px solid #eaebec; */
+  border-radius: 4px;
+  border-left: 0px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+  /* color: #1a1a1f; */
+  /* display: flex; */
+  /* font-weight: 600; */
+  /* height: auto; */
+  /* justify-content: space-between; */
+  padding: 15px;
+  margin: 0 0px 4px;
+  /* min-height: 60px; */
+  /* padding: 12px 24px 12px 12px; */
+  width: calc(100% - 20px)
+}
+.azure-products-prdt button::after {
+    content: '\2304';
+    /* color: var(--color-black); */
+    font-weight: bold;
+    align-items: center;
+    font-size: 20px;
+    float: right;
+    line-height: 1;
+    transform: translateY(-2px);
+}
+.azure-products-prdt button.active-product::after {
+    content: '\2303';
+}
+.azure-products-prdt button.active-product {
+    border-left: 3px;
+    color: #0062ad;
+    text-decoration: underline;
+    border-style: solid;
+    border-color: #0062ad;
+}
+.azure-products-hide {
+  display: block;
+}
+.azure-products-item {
+    grid-template-columns: 1fr 1fr;
+}
+
+/**************************** Find out how these customers are innovating with Azure */
 
 /**************************** Accelerate your migration and modernisation with Azure */
 .tools-body div:nth-child(2) {

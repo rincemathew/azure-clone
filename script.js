@@ -40,7 +40,7 @@ function dropdownMenu(id){
 
 //footer dropdown
 var acc = document.querySelectorAll('.footer-nav h3')
-console.log(acc)
+// console.log(acc)
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -57,3 +57,15 @@ for (i = 0; i < acc.length; i++) {
     // }
   });
 }
+
+
+//image show in ---Start putting your ideas into action with Azure products and services
+const azureProductShowImage = document.getElementById('azure-product-show-image');
+const azureProductHideImage = document.getElementById('azure-product-hide-image');
+
+azureProductShowImage.addEventListener('click', ()=>{
+  azureProductHideImage.style.display = 'block';
+})
+azureProductHideImage.addEventListener('click', ()=>{
+  azureProductHideImage.style.display = 'none';
+})
