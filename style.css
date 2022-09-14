@@ -841,14 +841,50 @@ footer {
 .footer-nav li:active {
     border-style: solid;
 }
-.footer-nav a {
+.footer-nav a,.footer-mini a,.footer-mini label {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     padding: 2px 0;
 }
 .footer-mini {
-    height: 104px;
+    display: flex;
+    min-height: 104px;
+    margin: 36px 0 0 0;
+    flex-wrap: wrap;
+}
+.footer-mini ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+.footer-mini li {
+    list-style: none;
+    margin: 0 0 12px 16px;
+}
+.footer-mini a:active {
+    border-width: 2px;
+    border-style: solid;
+}
+.footer-mini div:nth-of-type(2) {
+    display: flex;
+    align-items: flex-end;
+}
+.footer-mini select {
+    box-sizing: border-box;
+    color: #1a1a1f;
+    line-height: 1.2;
+    font-size: 14px;
+    padding: 5px;
+    height: 36px;
+    width: 50%;
+    margin-top: 10px;
+    border: 1px solid #747479;
+}
+.footer-mini select option {
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
 }
 
 /***************************************/
