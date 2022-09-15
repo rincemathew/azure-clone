@@ -340,7 +340,7 @@ header .nav-button.header-arrow-anime::after {
     text-decoration: underline;
 }
 
-.explore-azure a::after,.self-taught-div a::after {
+.explore-azure a::after,.self-taught-div a::after,.cutomer-content-div a::after {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 1L9 6L4 11' stroke='%23ffffff'/%3E%3C/svg%3E");
     content: '';
     background-repeat: no-repeat;
@@ -352,7 +352,7 @@ header .nav-button.header-arrow-anime::after {
     vertical-align: middle;
 }
 
-.explore-azure a:hover::after,.self-taught-div a:hover::after,.azure-products-prdt ul li a:hover::after {
+.explore-azure a:hover::after,.self-taught-div a:hover::after,.azure-products-prdt ul li a:hover::after,.cutomer-content-div a:hover::after {
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     margin-left: 0.4em;
@@ -373,7 +373,7 @@ header .nav-button.header-arrow-anime::after {
     overflow: hidden;
 }
 
-/* 
+/*
 .banner-img {
     width: 100%;
 } */
@@ -673,6 +673,7 @@ header .nav-button.header-arrow-anime::after {
     padding-left: 12px;
     font-size: 14px;
     font-weight: 600;
+    text-align: center;
     padding-top: 12px;
 }
 .azure-products-prdt ul li a:hover {
@@ -739,6 +740,82 @@ header .nav-button.header-arrow-anime::after {
 
 
 /**************************** Find out how these customers are innovating with Azure */
+.customer {
+    padding: 60px 0;
+}
+.customer-select ol {
+
+}
+.customer-select ul{
+    border: 3px solid transparent;
+    padding: 0;
+    margin: 3px 3px 1px 3px;
+}
+.customer-select ul.active{
+    border-color: var(--color-black);
+}
+
+.customer-select img{
+    width: 150px;
+    height: 84px;
+    padding: 12px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    filter: grayscale(100%)
+}
+.customer-select img.active{
+    border-bottom-color: #0078d4;
+    filter: grayscale(0);
+    background-color: #f8f9fa;
+}
+.customer-select img:hover{
+    filter: grayscale(0);
+    background-color: #f8f9fa;
+}
+.cutomer-content {
+
+}
+.cutomer-content-div {
+    display: none;
+    position: relative;
+}
+.cutomer-content-div.active {
+    display: block;
+}
+.cutomer-content-div img {
+    width: 100%;
+    height: auto;
+}
+.cutomer-content-div div {
+    margin: 0 15px;
+    left: 8%;
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    /* right: 40%; */
+    background-color: rgba(26,26,31,.94);
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border-radius: 6px;
+    color: #f8f9fa;
+    padding: 24px;
+
+}
+.cutomer-content-div p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.cutomer-content-div a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.cutomer-content-div a:hover {
+    text-decoration: underline;
+}
+
+
 
 /**************************** Accelerate your migration and modernisation with Azure */
 .tools {
@@ -1173,6 +1250,11 @@ footer {
         height: 90%;
     }
 
+    /**************************** Find out how these customers are innovating with Azure */
+    .cutomer-content-div div {
+        left: 0%;
+    }
+
     /*** FOOTER ***/
 
     }
@@ -1230,9 +1312,57 @@ footer {
 .azure-products h2 {
     text-align: center;
 }
+.azure-products-img button {
+    float: right;
+    padding-top: 20px;
+}
 
 
 /**************************** Find out how these customers are innovating with Azure */
+.customer-select img{
+    display: none;
+}
+.customer-select img.active{
+    display: block;
+    background-color: transparent;
+    border-bottom-color: transparent;
+    cursor: auto;
+    /* border-style: outset; */
+}
+.cutomer-content-div div {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-color: #f8f9fa;
+    box-shadow: none;
+    /* left: 0; */
+}
+.cutomer-content-div p {
+    color: #242429;
+}
+.cutomer-content-div a {
+    color: #0062ad;
+}
+.cutomer-content-div a::after {
+    content: ">";
+    font-weight: 600;
+}
+.owl-dot {
+    display: flex;
+    
+}
+.owl-dot button {
+    all: unset;
+    font-size: 70px;
+    padding: 22px;
+}
+.owl-dot button.active {
+    color: #0062ad;
+}
+
+
+
+
 
 /**************************** Discover what is happening on Azure */
 .discover-grid {
