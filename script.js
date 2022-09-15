@@ -83,24 +83,41 @@ function innerHtmlCall (list){
 }
 
 function addContent(evt, name) {
-  var list;
+  var list, count;
   // elementStyle = document.getElementById('azure-product-button-id');
   allElement = document.querySelectorAll('.azure-products-prdt button');
+  azureProductLoop = document.querySelectorAll(".azure-products-id-class");
   for (var i = 0; i < allElement.length; i++) {
     allElement[i].classList.remove('active-product');
+    if (allElement[i] == evt.currentTarget) {
+      count = i
+    }
   }
+  console.log(count)
+  for (let k = 0; k < azureProductLoop.length; k++) {
+    azureProductLoop[k].classList.remove("active-idqaz");
+    if (k === count) {
+      azureProductLoop[k].className = 'azure-products-id-class active-idqaz azure-products-item';
+      console.log(azureProductLoop[k])
+    }
+  }
+
+  // console.log(evt.currentTarget)
   evt.currentTarget.className += 'active-product';
-  // console.log(elementStyle)
-  // azureProductItemCard = document.querySelectorAll('.azure-products-item-card');
-  // for (var i = 0; i < azureProductItemCard.length; i++) {
-  //   allElement[i].classList.remove('active-product');
-  // }
+
+
+
+  azureProductLoop = document.getElementsByClassName('azure-products-id-class');
+  for (var i = 0; i < azureProductLoop.length; i++) {
+    azureProductLoop[i].classList.remove('active-id');
+  }
+
 
   for (var i=0; i< azureProducts.length; i++){
     // console.log(azureProducts[i])
     if(name == azureProducts[i].item) {
       list = azureProducts[i].list
-      console.log(list)
+      // console.log(list)
       document.getElementById("azure-products-item").innerHTML = ` `;
       innerHtmlCall(list);
       
@@ -110,3 +127,33 @@ function addContent(evt, name) {
   }
 }
 innerHtmlCall(azureProducts[0].list)
+//for mobile
+var z,j
+azureProductsIdClass = document.getElementsByClassName("azure-products-id-class");
+   for (z = 0; z < azureProductsIdClass.length; z++) {
+    //  console.log(azureProductsIdClass[z]);
+     for (j = 0; j < azureProducts.length; j++) {
+      if (z == j) {
+        list = azureProducts[j].list ;
+        // console.log(list)
+        for (i= 0;i<list.length;i++) {
+          azureProductsIdClass[i].innerHTML += `<div class="card azure-products-item-card">
+          <img src="${list[i].img}">
+          <p>${list[i].des}</p>
+          <a>${list[i].name}</a>
+      </div>`;
+        }
+        
+      }
+      // console.log(azureProducts[j].list)
+      
+     }
+     
+     // allElement[i].classList.remove('active-product');
+   }
+
+//  for (var j = 0; j < azureProducts.length; j++) {
+//    list = azureProducts[j].list;
+//    console.log(list);
+//  }
+

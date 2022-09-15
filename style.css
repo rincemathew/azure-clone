@@ -684,11 +684,21 @@ header .nav-button.header-arrow-anime::after {
     color: #0062ad;
     /* transform: rotate(180deg); */
 }
+
 .azure-products-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     row-gap: 24px;
+}
+.azure-products-id-class{
+    display: none;
+}
+/* .active-id {
+    display: grid;
+} */
+.azure-products-id-class.active-idqaz{
+    display: grid;
 }
 .azure-products-item-card {
     display: flex;
