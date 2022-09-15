@@ -364,19 +364,19 @@ header .nav-button.header-arrow-anime::after {
 }
 
 .banner {
+    background-image: url('https://azurecomcdn.azureedge.net/cvt-3474992b55ef7111c885a238858dce511933a514e0cae6a566a9fabcad6ff0a1/images/page/home/hero-desktop.webp');
     background-size: cover;
     /* object-fit: cover; */
-    height: 94vh;
+    height: 100vh;
     width: auto;
     background-position: center;
     overflow: hidden;
-    background-image: url('https://azurecomcdn.azureedge.net/cvt-fd2414f5ea9d56832851d60ff2d20c3d07cf2953323fd82ec078346eaee0781f/images/page/home/hero-desktop.webp');
 }
 
-
+/* 
 .banner-img {
-
-}
+    width: 100%;
+} */
 
 /* .banner1d img{
     object-fit: cover;
@@ -1097,6 +1097,32 @@ footer {
     pointer-events: none;
 }
 
+/**************************** Chat with Sales. */
+.message {
+    position: fixed;
+    bottom: 0;
+    right: 12px;
+    z-index: 1000;
+    font-weight: 350;
+}
+.message button {
+    background-color: #0078d4;
+    border: 1px solid #0078d4;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 40px;
+    padding: 10px 18px;
+    width: auto;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    box-shadow: 0 -5px 10px rgb(0 0 0 / 14%);
+    font-weight: 350;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
 /***************************************/
 
 /**** design change less than 1310px ****/
@@ -1113,9 +1139,9 @@ footer {
 /*** MAIN CONTENT ***/
 
 /**************************** AZURE. INVENT WITH PURPOSE. */
-.banner-text {
+/* .banner-text {
     width: 100%;
-}
+} */
 
 
 /*** FOOTER ***/
@@ -1141,7 +1167,7 @@ footer {
 
     /**************************** AZURE. INVENT WITH PURPOSE. */
     .banner{
-        height: 63vh;
+        height: 70vh;
     }
     .banner-text {
         height: 90%;
@@ -1164,18 +1190,17 @@ footer {
 .col-1080-100 {width: 100%;}
 .col-1080-hide {display: none;}
 
+.banner{
+    height: 80vh;
+}
+
 .slide-down-scroll {
   display: none;
 }
 
 /*** MAIN CONTENT ***/
-/**************************** AZURE. INVENT WITH PURPOSE. */
-.banner{
-    background-image: url('https://azurecomcdn.azureedge.net/cvt-823b7f40e8ea591bac8e2d94f02cbf175df12b0687875d24737168063e95621f/images/page/home/hero-tablet.webp');
-}
-.body-banner-text {
-    display: none;
-}
+
+
 /*** FOOTER ***/
 
 }
@@ -1195,6 +1220,12 @@ footer {
 
 
 /*** MAIN CONTENT ***/
+/**************************** AZURE. INVENT WITH PURPOSE. */
+.banner{
+    background-image: url('https://azurecomcdn.azureedge.net/cvt-3474992b55ef7111c885a238858dce511933a514e0cae6a566a9fabcad6ff0a1/images/page/home/hero-tablet.webp');
+    height:70vh;
+}
+
 /**************************** Start putting your ideas into action with Azure products and services */
 .azure-products h2 {
     text-align: center;
@@ -1353,6 +1384,21 @@ header {
 
 
 /*** MAIN CONTENT ***/
+/**************************** AZURE. INVENT WITH PURPOSE. */
+.banner{
+    background-image: url('https://azurecomcdn.azureedge.net/cvt-3474992b55ef7111c885a238858dce511933a514e0cae6a566a9fabcad6ff0a1/images/page/home/hero-tablet.webp');
+    min-height:110vh;
+    align-items: center;
+}
+.banner-text-width p, h1 {
+    text-align: center;
+}
+.button-blue {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
 /**************************** Start putting your ideas into action with Azure products and services */
 .azure-products-img img {
   display: block;

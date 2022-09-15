@@ -107,10 +107,10 @@ function addContent(evt, name) {
 
 
 
-  azureProductLoop = document.getElementsByClassName('azure-products-id-class');
-  for (var i = 0; i < azureProductLoop.length; i++) {
-    azureProductLoop[i].classList.remove('active-id');
-  }
+  // azureProductLoop = document.getElementsByClassName('azure-products-id-class');
+  // for (var i = 0; i < azureProductLoop.length; i++) {
+  //   azureProductLoop[i].classList.remove('active-id');
+  // }
 
 
   for (var i=0; i< azureProducts.length; i++){
