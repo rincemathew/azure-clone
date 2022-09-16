@@ -203,13 +203,7 @@ header .nav-button::after {
     z-index: 999;
 }
 .dropdown-container-show {
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: auto;
     display: flex;
-    justify-content: center;
-    z-index: 999;
 }
 header .nav-button.header-arrow-anime::after {
     transform: rotate(270deg);
@@ -237,6 +231,30 @@ header .nav-button.header-arrow-anime::after {
 /* .nav-form input:focus + .header-container nav:first-child {
     display: none;
 } */
+.drop-content {
+    /* padding: 40px 20px; */
+    display: flex;
+}
+.drop-content div {
+    padding: 40px 20px;
+    max-width: 400px;
+}
+.drop-content h2 {
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.drop-content h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 12px 0 2px;
+}
+.drop-content p {
+    line-height: 1.5;
+    margin: 6px 0 0;
+    font-size: 13px;
+    font-weight: 400;
+}
 
 .nav-form button {
     /* background-color: #747479; */
@@ -1508,7 +1526,10 @@ header {
     height: 78px;
 }
 
-.header-container nav {
+.header-container .first-ul {
+    display: none;
+}
+.header-container .nav-second {
     display: none;
 }
 
