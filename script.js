@@ -157,3 +157,38 @@ azureProductsIdClass = document.getElementsByClassName("azure-products-id-class"
 //    console.log(list);
 //  }
 
+
+
+//Find out how these customers are innovating with Azure
+
+function customerEvt(evt, count) {
+  
+  customerSelect = document.querySelectorAll('.customer-select img')
+  customerContentDiv = document.querySelectorAll('.cutomer-content-div')
+  owlDot = document.querySelectorAll('.owl-dot button');
+
+  for (var i=0; i<6; i++) {
+    customerSelect[i].classList.remove('active')
+    customerContentDiv[i].classList.remove('active')
+    owlDot[i].classList.remove('active')
+    if(i == count) {
+      customerSelect[i].classList.add('active')
+    customerContentDiv[i].classList.add('active')
+    owlDot[i].classList.add('active')
+    }
+  }
+  // evt.currentTarget.className += 'active';
+}
+
+
+// allElement = document.querySelectorAll('.azure-products-prdt button');
+//   azureProductLoop = document.querySelectorAll(".azure-products-id-class");
+//   for (var i = 0; i < allElement.length; i++) {
+//     allElement[i].classList.remove('active-product');
+//     if (allElement[i] == evt.currentTarget) {
+//       count = i
+//     }
+//   }
+//customer-select img.active
+//cutomer-content-div.active loop
+//owl-dot button.active

@@ -1355,6 +1355,7 @@ footer {
     all: unset;
     font-size: 70px;
     padding: 22px;
+    cursor: pointer;
 }
 .owl-dot button.active {
     color: #0062ad;
