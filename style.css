@@ -7,9 +7,7 @@
     --container-width:86.5%;
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box;}
 
 html,body {
     overflow-x: hidden;
@@ -53,7 +51,6 @@ a { text-decoration: none; }
 .col-d-86 {width: 86%;}
 .col-d-100 {width: 100%;}
 .col-d-hide {display: none;}
-
 
 
 /*** HEADER ***/
@@ -107,10 +104,6 @@ header {
     border-color: var(--color-black);
 }
 
-/* .header-container ul a:target div {
-    display: flex;
-} */
-
 .header-container nav button {
     all: unset;
     cursor: pointer;
@@ -118,13 +111,6 @@ header {
     font-weight: 400;
     padding: 16px 7px 16px 6px;
 }
-/* .nav-button2 {
-    all: unset;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 400;
-    padding: 16px 7px 16px 6px;
-} */
 
 header .nav-button::after {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 1L9 6L4 11' stroke='black'/%3E%3C/svg%3E");
@@ -136,11 +122,6 @@ header .nav-button::after {
     display: inline-block;
     position: absolute;
 }
-
-/* .nav-button:active::after {
-    transform: rotate(270deg);
-    transition: transform .25s 0s;
-} */
 
 .nav-second {
     white-space:nowrap;
@@ -164,14 +145,14 @@ header .nav-button::after {
     font-size: 13px;
     margin: 5px 24px 5px 12px;
     width: 100%;
-    /* min-width: 60px; */
-    /* max-width: 60px; */
     border: none;
     outline: none;
 }
+
 .nav-form div:focus-within {
     width: 100%;
 }
+
 .nav-form input:focus {
     width: 600px;
 }
@@ -193,6 +174,7 @@ header .nav-button::after {
     background-color: #9bdd02;
     text-decoration: underline;
 }
+
 .dropdown-container {
     left: 0;
     position: absolute;
@@ -202,18 +184,15 @@ header .nav-button::after {
     justify-content: center;
     z-index: 999;
 }
+
 .dropdown-container-show {
     display: flex;
 }
+
 header .nav-button.header-arrow-anime::after {
     transform: rotate(270deg);
     transition: transform .25s 0s;
 }
-
-/* .header-container ul a {
-    border-color: var(--color-black);
-    background-color: #f4f5f6;
-} */
 
 .dropdown {
     margin: 3px 0;
@@ -223,32 +202,27 @@ header .nav-button.header-arrow-anime::after {
     width: var(--container-width);
 }
 
-/* .nav-form input:focus {
-    background-color: #0078d4;
-    max-width: 600px;
-} */
-
-/* .nav-form input:focus + .header-container nav:first-child {
-    display: none;
-} */
 .drop-content {
-    /* padding: 40px 20px; */
     display: flex;
 }
+
 .drop-content div {
     padding: 40px 20px;
     max-width: 400px;
 }
+
 .drop-content h2 {
     font-size: 12px;
     margin-bottom: 20px;
     font-weight: 600;
 }
+
 .drop-content h6 {
     font-size: 14px;
     font-weight: 600;
     margin: 12px 0 2px;
 }
+
 .drop-content p {
     line-height: 1.5;
     margin: 6px 0 0;
@@ -257,7 +231,6 @@ header .nav-button.header-arrow-anime::after {
 }
 
 .nav-form button {
-    /* background-color: #747479; */
     all: unset;
 }
 
@@ -317,17 +290,11 @@ header .nav-button.header-arrow-anime::after {
 }
 
 
-
-
-
-
 /*** MAIN CONTENT ***/
 /* common elements */
 .card {
-    /* background-color: #fff; */
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     border-radius: 6px;
-    /* color: #4c4c51; */
     border: 1px solid transparent;
 }
 
@@ -377,9 +344,6 @@ header .nav-button.header-arrow-anime::after {
 }
 
 /**************************** AZURE. INVENT WITH PURPOSE. */
-.body-banner {
-
-}
 
 .banner {
     background-image: url('https://azurecomcdn.azureedge.net/cvt-3474992b55ef7111c885a238858dce511933a514e0cae6a566a9fabcad6ff0a1/images/page/home/hero-desktop.webp');
@@ -391,22 +355,10 @@ header .nav-button.header-arrow-anime::after {
     overflow: hidden;
 }
 
-/*
-.banner-img {
-    width: 100%;
-} */
-
-/* .banner1d img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-} */
-
 .body-banner-text {
     height: 100%;
     display: flex;
     justify-content: center;
-
 }
 
 .banner-text {
@@ -477,7 +429,6 @@ header .nav-button.header-arrow-anime::after {
     color: var(--color-white);
 }
 
-
 /**************************** On-premises, hybrid, multicloud, or at the edge—create secure, future-ready cloud solutions on Azure */
 .on-premise {
     padding: 60px 0;
@@ -510,14 +461,11 @@ header .nav-button.header-arrow-anime::after {
 
 .on-premise-grid2 div:nth-child(2),.on-premise-grid3 div:nth-child(2) {
     padding: 24px 24px 24px 12px;
-    /* border: 0; */
 }
+
 .on-premise-grid2 img,.on-premise-grid3 img {
-    /* width: 100%; */
     max-width: 156px;
-    /* height: auto; */
     max-height: 158px;
-    /* max-width: 156; */
     object-fit: contain;
     border: 0;
 }
@@ -529,10 +477,13 @@ header .nav-button.header-arrow-anime::after {
     line-height: 1.3;
     margin: 0;
 }
+
 .on-premise-grid > div:hover h2 {
     text-decoration: underline;
 }
+
 .on-premise-grid h2:hover { color: #002847;}
+
 .on-premise-grid p {
     color: #4c4c51;
     font-size: 16px;
@@ -540,12 +491,15 @@ header .nav-button.header-arrow-anime::after {
     line-height: 1.5;
     margin: 12px 0;
 }
+
 .on-premise-button {
     padding: 62px 39px 24px 39px;
 }
+
 .on-premise-button div {
     flex-wrap: wrap;
 }
+
 .on-premise-button span {
     font-size: 16px;
     color: #1a1a1f;
@@ -557,32 +511,36 @@ header .nav-button.header-arrow-anime::after {
     padding: 60px 0;
     background-color: #f8f9fa;
 }
+
 .azure-products h2 {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.2;
-    /* margin: 0 0 12px; */
 }
+
 .azure-products-body {
     display: flex;
     flex-wrap: wrap;
 }
+
 .azure-products-img{
     padding-left: 36px;
 }
+
 .azure-products-img:hover{
     transform: translateX(-36px);
     transition: transform .5s;
     cursor: pointer;
 }
+
 .azure-products-img img {
     max-height: 530px;
     border-radius: 12px;
     background-color: #000;
     padding: 10%;
     box-shadow: 0 10px 20px rgb(0 0 0 / 14%);
-
 }
+
 .azure-products-img button {
     all: unset;
     color: #0062ad;
@@ -590,19 +548,16 @@ header .nav-button.header-arrow-anime::after {
     font-size: 14px;
     position: relative;
     padding: 0 12px 0 40px;
-
 }
+
 .azure-products-img button::before {
     content: '\1F814';
-    /* color: #777; */
     font-weight: bold;
     align-items: center;
     font-size: 20px;
     float: left;
-    /* line-height: 1; */
-    /* transform: translateY(-2px); */
-
 }
+
 .hidden-elements {
     position: fixed;
     z-index: 99997;
@@ -614,6 +569,7 @@ header .nav-button.header-arrow-anime::after {
     overflow: auto;
     background-color: rgba(0,0,0,.9);
 }
+
 .hidden-elements img {
     position: fixed;
     left: 50%;
@@ -624,6 +580,7 @@ header .nav-button.header-arrow-anime::after {
     z-index: 99999;
     padding: 24px;
 }
+
 .hidden-elements button {
     background-color: transparent;
     border: 0;
@@ -642,13 +599,16 @@ header .nav-button.header-arrow-anime::after {
     width: 20px;
     z-index: 99998;
 }
+
 .azure-products-list {
     display: flex;
 }
+
 .azure-products-prdt ol {
     padding: 0;
     margin: 0;
 }
+
 .azure-products-prdt ul {
     padding: 5px;
     margin-right: 5px;
@@ -656,9 +616,11 @@ header .nav-button.header-arrow-anime::after {
     margin-bottom: 5px;
     list-style-type: none;
 }
+
 .azure-products-prdt ul.active-product {
     border-style: solid;
 }
+
 .azure-products-prdt button {
     all: unset;
     transition: all .2s ease-in-out;
@@ -669,23 +631,26 @@ header .nav-button.header-arrow-anime::after {
     font-weight: 400;
     margin-left: -3px;
     padding: 12px;
-    /* display: block; */
     text-decoration: none;
     width: 100%;
 }
+
 .azure-products-prdt button.active-product {
     color: var(--color-black);
     font-weight: 600;
     border-left-color: #0062ad;
 }
+
 .azure-products-prdt button.active-product:hover {
     color: var(--color-black);
 }
+
 .azure-products-prdt button:hover {
     color: #0062ad;
     text-decoration: underline;
     cursor: pointer;
 }
+
 .azure-products-prdt ul li a {
     color: #0062ad;
     padding-left: 12px;
@@ -694,14 +659,15 @@ header .nav-button.header-arrow-anime::after {
     text-align: center;
     padding-top: 12px;
 }
+
 .azure-products-prdt ul li a:hover {
     color: #4c4c51;
 }
+
 .azure-products-prdt ul li a::after {
     content: '>';
     font-size: 20px;
     color: #0062ad;
-    /* transform: rotate(180deg); */
 }
 
 .azure-products-item {
@@ -710,48 +676,43 @@ header .nav-button.header-arrow-anime::after {
     column-gap: 30px;
     row-gap: 24px;
 }
+
 .azure-products-id-class{
     display: none;
 }
-/* .active-id {
-    display: grid;
-} */
+
 .azure-products-id-class.active-idqaz{
     display: grid;
 }
+
 .azure-products-item-card {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* height: 100%; */
-    /* justify-content: center; */
     padding: 24px;
-    /* text-align: center; */
 }
+
 .azure-products-item img {
     width: 36px;
     height: 36px;
-    /* display: flex; */
-    /* justify-content: flex-start; */
     flex-grow: 2;
 }
+
 .azure-products-item p {
-    /* display: flex; */
-    /* justify-content: flex-end; */
     text-align: center;
     font-size: 16px;
     color: #4c4c51;
     flex-grow: 3;
 }
+
 .azure-products-item a {
     font-size: 14px;
     font-weight: 600;
     color: #0062ad;
     line-height: 1.3;
-    /* display: flex; */
-    /* justify-content: flex-end; */
     flex-grow: 1;
 }
+
 .azure-products-item:hover a {
     text-decoration: underline;
 }
@@ -761,14 +722,13 @@ header .nav-button.header-arrow-anime::after {
 .customer {
     padding: 60px 0;
 }
-.customer-select ol {
 
-}
 .customer-select ul{
     border: 3px solid transparent;
     padding: 0;
     margin: 3px 3px 1px 3px;
 }
+
 .customer-select ul.active{
     border-color: var(--color-black);
 }
@@ -781,69 +741,71 @@ header .nav-button.header-arrow-anime::after {
     cursor: pointer;
     filter: grayscale(100%)
 }
+
 .customer-select img.active{
     border-bottom-color: #0078d4;
     filter: grayscale(0);
     background-color: #f8f9fa;
 }
+
 .customer-select img:hover{
     filter: grayscale(0);
     background-color: #f8f9fa;
 }
-.cutomer-content {
 
-}
 .cutomer-content-div {
     display: none;
     position: relative;
 }
+
 .cutomer-content-div.active {
     display: block;
 }
+
 .cutomer-content-div img {
     width: 100%;
     height: auto;
 }
+
 .cutomer-content-div div {
     margin: 0 15px;
     left: 8%;
     width: 50%;
     position: absolute;
     bottom: 10%;
-    /* right: 40%; */
     background-color: rgba(26,26,31,.94);
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     border-radius: 6px;
     color: #f8f9fa;
     padding: 24px;
-
 }
+
 .cutomer-content-div p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.3;
 }
+
 .cutomer-content-div a {
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 }
+
 .cutomer-content-div a:hover {
     text-decoration: underline;
 }
-
-
 
 /**************************** Accelerate your migration and modernisation with Azure */
 .tools {
     background-color: #f8f9fa;
     padding: 60px 0;
 }
+
 .tools-body {
     padding: 36px;
     flex-wrap: wrap;
-    /* margin: 0 -15px 0 0; */
 }
 
 .tools-body h2 {
@@ -852,12 +814,6 @@ header .nav-button.header-arrow-anime::after {
     line-height: 1.2;
     margin: 0 0 36px 0;
 }
-/* .tools-body div:nth-child(1) {
-    width: 100%;
-}
-.tools-body div:nth-child(2) {
-    width: 100%;
-} */
 
 /**************************** Discover what is happening on Azure */
 .discover {
@@ -871,45 +827,39 @@ header .nav-button.header-arrow-anime::after {
     margin: 0 0 24px 0;
 }
 .discover-grid {
-    /* padding: 0 15px; */
-    /* margin: 35px 0; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-auto-flow: row; */
-    /* grid-template-rows: 300px; */
     column-gap: 30px;
     row-gap: 24px;
 }
+
 .d-g-item3 {
     grid-column-start: 3;
     grid-column-end: 6;
 }
+
 .d-g-item5 {
     grid-column-start: 2;
     grid-column-end: 4;
 }
-.g-grid-normal{
- /* max-width: 300px; */
-}
+
 .g-grid-normal img {
-    /* display: block; */
     max-width: 100%;
     border-radius: 6px 6px 0 0;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
 }
+
 .g-grid-normal p:nth-of-type(1) {
     color: #4c4c51;
     font-size: 12px;
     font-weight: 600;
     line-height: 1.5;
     padding: 0px 12px;
-    /* text-decoration: none; */
 }
+
 .discover-grid a:hover p:nth-of-type(1){
     text-decoration: underline white;
-
 }
+
 .g-grid-normal p:nth-of-type(2) {
     color: #4c4c51;
     font-size: 16px;
@@ -920,15 +870,13 @@ header .nav-button.header-arrow-anime::after {
 
 .g-grid-back {
     position: relative;
-    /* text-align: center; */
 }
-
 
 .g-grid-back img {
     max-width: 100%;
     border-radius: 6px;
-
 }
+
 .g-grid-back p:nth-of-type(2) {
     position: absolute;
     bottom: 24px;
@@ -937,22 +885,22 @@ header .nav-button.header-arrow-anime::after {
     color: #fff;
     font-size: 24px;
     font-weight: 600;
-
 }
 
 .g-grid-back p:nth-of-type(2):hover {
     text-decoration: underline;
-
 }
 
 /**************************** See how a self-taught developer helped level */
 .self-taught {
     position: relative;
 }
+
 .self-taught img {
     width: 100%;
     height: auto;
 }
+
 .self-taught-div {
     position: absolute;
     top: 5%;
@@ -971,6 +919,7 @@ header .nav-button.header-arrow-anime::after {
     font-weight: 600;
     line-height: 1.2;
 }
+
 .self-taught-div button {
     background-color: #0078d4;
     border: 0;
@@ -984,10 +933,12 @@ header .nav-button.header-arrow-anime::after {
     position: relative;
     width: auto;
 }
+
 .self-taught-div button:hover {
     background-color: #006abb;
     color: #fff;
 }
+
 .self-taught-div button:before {
     content: '';
     display: block;
@@ -1000,6 +951,7 @@ header .nav-button.header-arrow-anime::after {
     transform: translateY(-50%);
     left: 16px;
 }
+
 .self-taught-div button::after {
     position: absolute;
     content: '';
@@ -1013,15 +965,18 @@ header .nav-button.header-arrow-anime::after {
     transform: translateY(-50%);
     left: 26px;
 }
+
 .self-taught-div a {
     font-size: 14px;
     font-weight: 600;
     text-decoration: underline;
     line-height: 1.5;
 }
+
 .self-taught-div a:hover {
     text-decoration: none;
 }
+
 .self-taught-play {
     all: unset;
     position: absolute;
@@ -1038,22 +993,28 @@ header .nav-button.header-arrow-anime::after {
     row-gap: 24px;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .azure-support div {
     padding: 24px;
 }
+
 .azure-support img {
     max-width: 48px;
     height: 48px;
 }
+
 .azure-support div:nth-of-type(1) {
     background-color: #243a5e;
 }
+
 .azure-support div:nth-of-type(2) {
     background-color: #242429;
 }
+
 .azure-support div:nth-of-type(3) {
     background-color: #0062ad;
 }
+
 .azure-support h3 {
     color: #f8f9fa;
     font-size: 20px;
@@ -1061,6 +1022,7 @@ header .nav-button.header-arrow-anime::after {
     line-height: 1.3;
     margin: 20px 0 0 0;
 }
+
 .azure-support p {
     color: #f8f9fa;
     font-size: 16px;
@@ -1068,10 +1030,6 @@ header .nav-button.header-arrow-anime::after {
     line-height: 1.5;
     margin: 16px 0 0 0;
 }
-
-
-
-
 /*** FOOTER ***/
 
 footer {
@@ -1092,22 +1050,23 @@ footer {
     padding: 12px;
     margin-right: 26px;
 }
+
 .social div:nth-of-type(1):hover{
     text-decoration: underline;
     border-style: solid;
 }
+
 .svg-icon {
     cursor: pointer;
     margin-right: 26px;
     height: auto;
     width: 24px;
 }
+
 .svg-icon img:hover{
     filter: invert(27%) sepia(10%) saturate(258%) hue-rotate(201deg) brightness(96%) contrast(86%);
 }
-.social div:nth-of-type(1) span:nth-of-type(1){
 
-}
 .social div:nth-of-type(1) span:nth-of-type(2){
     font-size: 14px;
     font-weight: 600;
@@ -1121,17 +1080,19 @@ footer {
     column-gap: 24px;
     grid-template-columns: repeat(6,1fr);
 }
+
 .footer-nav h3 {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.3;
     margin: 0 0 9px;
 }
+
 .footer-nav ul {
-    /* display: block; */
     padding-left: 0;
     margin: 0;
 }
+
 .footer-nav li {
     list-style: none;
     width: 100%;
@@ -1142,36 +1103,43 @@ footer {
 .footer-nav li:active {
     border-style: solid;
 }
+
 .footer-nav a,.footer-mini a,.footer-mini label {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     padding: 2px 0;
 }
+
 .footer-mini {
     display: flex;
     min-height: 104px;
     margin: 36px 0 0 0;
     flex-wrap: wrap;
 }
+
 .footer-mini ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-bottom: 0;
 }
+
 .footer-mini li {
     list-style: none;
     margin: 0 0 12px 16px;
 }
+
 .footer-mini a:active {
     border-width: 2px;
     border-style: solid;
 }
+
 .footer-mini div:nth-of-type(2) {
     display: flex;
     align-items: flex-end;
 }
+
 .footer-mini select {
     box-sizing: border-box;
     color: #1a1a1f;
@@ -1183,10 +1151,12 @@ footer {
     margin-top: 10px;
     border: 1px solid #747479;
 }
+
 .footer-mini select option {
     min-height: 1.2em;
     padding: 0px 2px 1px;
 }
+
 .footer-mini li:last-child a {
     font-weight: 600;
     pointer-events: none;
@@ -1222,31 +1192,14 @@ footer {
 
 /**** design change less than 1310px ****/
 @media only screen and (max-width: 1310px) {
-/*** HEADER ***/
 
-.col-1310-25 {width: 25%;}
-.col-1310-50 {width: 50%;}
-.col-1310-75 {width: 75%;}
-.col-1310-86 {width: 86%;}
 .col-1310-100 {width: 100%;}
-.col-1310-hide {display: none;}
-
-/*** MAIN CONTENT ***/
-
-/**************************** AZURE. INVENT WITH PURPOSE. */
-/* .banner-text {
-    width: 100%;
-} */
-
-
-/*** FOOTER ***/
-
 }
 
 
 /**** design change less than 1280px ****/
 @media only screen and (max-width: 1280px) {
-    /*** HEADER ***/
+
     .col-1280-25 {width: 25%;}
     .col-1280-50 {width: 50%;}
     .col-1280-75 {width: 75%;}
@@ -1254,16 +1207,17 @@ footer {
     .col-1280-100 {width: 100%;}
     .col-1280-hide {display: none;}
 
+    /*** HEADER ***/
     .nav-second {
     white-space:normal;
     }
 
     /*** MAIN CONTENT ***/
-
     /**************************** AZURE. INVENT WITH PURPOSE. */
     .banner{
         height: 70vh;
     }
+
     .banner-text {
         height: 90%;
     }
@@ -1273,15 +1227,12 @@ footer {
         left: 0%;
     }
 
-    /*** FOOTER ***/
-
     }
 
 
 
 /**** design change less than 1080px ****/
 @media only screen and (max-width: 1080px) {
-/*** HEADER ***/
 /* responsive */
 .col-1080-25 {width: 25%;}
 .col-1080-50 {width: 50%;}
@@ -1290,6 +1241,7 @@ footer {
 .col-1080-100 {width: 100%;}
 .col-1080-hide {display: none;}
 
+/*** MAIN CONTENT ***/
 .banner{
     height: 80vh;
 }
@@ -1298,13 +1250,7 @@ footer {
   display: none;
 }
 
-/*** MAIN CONTENT ***/
-
-
-/*** FOOTER ***/
-
 }
-
 
 
 /**** design change less than 960px ****/
@@ -1316,8 +1262,6 @@ footer {
 .col-960-86 {width: 86%;}
 .col-960-100 {width: 100%;}
 .col-960-hide {display: none;}
-/*** HEADER ***/
-
 
 /*** MAIN CONTENT ***/
 /**************************** AZURE. INVENT WITH PURPOSE. */
@@ -1335,85 +1279,79 @@ footer {
     padding-top: 20px;
 }
 
-
 /**************************** Find out how these customers are innovating with Azure */
 .customer-select img{
     display: none;
 }
+
 .customer-select img.active{
     display: block;
     background-color: transparent;
     border-bottom-color: transparent;
     cursor: auto;
-    /* border-style: outset; */
 }
+
 .cutomer-content-div div {
     position: relative;
     width: 100%;
     margin: 0;
     background-color: #f8f9fa;
     box-shadow: none;
-    /* left: 0; */
 }
+
 .cutomer-content-div p {
     color: #242429;
 }
+
 .cutomer-content-div a {
     color: #0062ad;
 }
+
 .cutomer-content-div a::after {
     content: ">";
     font-weight: 600;
 }
+
 .owl-dot {
     display: flex;
-    
 }
+
 .owl-dot button {
     all: unset;
     font-size: 70px;
     padding: 22px;
     cursor: pointer;
 }
+
 .owl-dot button.active {
     color: #0062ad;
 }
-
-
-
-
 
 /**************************** Discover what is happening on Azure */
 .discover-grid {
     grid-template-columns: repeat(3, 1fr);
 }
+
 .d-g-item3 {
     grid-column-start: 3;
     grid-column-end: 3;
 }
+
 .d-g-item5 {
     grid-column-start: 2;
     grid-column-end: 2;
 }
+
 .g-grid-back img {
     object-fit: cover;
     min-height: 260px;
-    /* max-width: 100%; */
 }
 
 .g-grid-back p:nth-of-type(2) {
     font-size: 18px;
-
 }
 
 /**************************** See how a self-taught developer helped level */
-/* .self-taught {
-    position: relative;
-}
-.self-taught img {
-    width: 100%;
-    height: auto;
-} */
 .self-taught-div {
     position: relative;
     top: 0%;
@@ -1450,6 +1388,7 @@ footer {
     transition-property: background-color;
     text-decoration: none;
 }
+
 .self-taught-div a:hover {
     background-color: #0078d4;
     color: #f8f9fa;
@@ -1457,6 +1396,7 @@ footer {
     text-decoration: underline;
     cursor: pointer;
 }
+
 .self-taught-div a::after {
     background-image: url("");
     content: '';
@@ -1467,26 +1407,30 @@ footer {
     grid-template-columns: 1fr;
 }
 
-
 /*** FOOTER ***/
 .footer-nav {
     row-gap: 24px;
     grid-template-columns: 1fr;
 }
+
 .footer-nav h3 {
     background-color: #eaebec;
     padding: 12px 24px;
     border-radius: 4px;
 }
+
 .footer-nav ul {
     padding: 12px 24px;
 }
+
 .footer-nav ul.showing {
     display: block;
 }
+
 .footer-nav h3:hover {
     cursor: pointer;
 }
+
 .footer-nav h3:after {
     content: '\002B';
     color: #777;
@@ -1496,19 +1440,13 @@ footer {
     float: right;
     line-height: 1;
     transform: translateY(-2px);
-  }
-  .footer-nav h3.active:after {
-    content: "\2212";
-  }
-
 }
 
-/* @media only screen and (min-width: 960px) {
-    .footer-nav ul {
-        display: block;
-    }
-} */
+.footer-nav h3.active:after {
+    content: "\2212";
+}
 
+}
 
 /**** for mobile phones ****/
 @media only screen and (max-width: 768px) {
@@ -1529,11 +1467,10 @@ header {
 .header-container .first-ul {
     display: none;
 }
+
 .header-container .nav-second {
     display: none;
 }
-
-
 
 /*** MAIN CONTENT ***/
 /**************************** AZURE. INVENT WITH PURPOSE. */
@@ -1550,7 +1487,6 @@ header {
     margin-bottom: 15px;
 }
 
-
 /**************************** Start putting your ideas into action with Azure products and services */
 .azure-products-img img {
   display: block;
@@ -1558,45 +1494,28 @@ header {
   height: auto;
   padding: 3%
 }
+
 .azure-products-img{
     margin-top: 10px;
     padding-left: 15px;
     pointer-events: none;
 }
+
 .azure-products-img button {
   display: none;
 }
 
-/* .azure-products-prdt ul {
-    padding: 0px;
-    margin-right: 0px;
-    border-style: none;
-    margin-bottom: 5px;
-    list-style-type: none;
-} */
 .azure-products-prdt button {
-  /* transition: all .2s ease-in-out; */
-  /* align-items: center; */
-  /* background-color: #fff; */
-  /* border: 0; */
-  /* border-bottom: 1px solid #eaebec; */
   border-radius: 4px;
   border-left: 0px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-  /* color: #1a1a1f; */
-  /* display: flex; */
-  /* font-weight: 600; */
-  /* height: auto; */
-  /* justify-content: space-between; */
   padding: 15px;
   margin: 0 0px 4px;
-  /* min-height: 60px; */
-  /* padding: 12px 24px 12px 12px; */
   width: calc(100% - 20px)
 }
+
 .azure-products-prdt button::after {
     content: '\2304';
-    /* color: var(--color-black); */
     font-weight: bold;
     align-items: center;
     font-size: 20px;
@@ -1604,9 +1523,11 @@ header {
     line-height: 1;
     transform: translateY(-2px);
 }
+
 .azure-products-prdt button.active-product::after {
     content: '\2303';
 }
+
 .azure-products-prdt button.active-product {
     border-left: 3px;
     color: #0062ad;
@@ -1614,38 +1535,38 @@ header {
     border-style: solid;
     border-color: #0062ad;
 }
+
 .azure-products-hide {
   display: block;
 }
+
 .azure-products-item {
     grid-template-columns: 1fr 1fr;
 }
+
 .azure-products-item:last-child {
     padding-bottom: 15px;
 }
-
-/**************************** Find out how these customers are innovating with Azure */
 
 /**************************** Accelerate your migration and modernisation with Azure */
 .tools-body div:nth-child(2) {
     text-align: center;
 }
+
 .tools-body h2 {
     margin: 32px 0 15px 0;
 }
+
 .button-w-blue {
     width: 100%;
 }
+
 /**************************** On-premises, hybrid, multicloud, or at the edge—create secure, future-ready cloud solutions on Azure */
 .on-premise-grid {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
-    /* grid-auto-flow: column; */
 }
-/* .on-premise-grid1 {
-    grid-row-start: 1;
-    grid-row-end: 1;
-} */
+
 .on-premise-grid1 {
     display: flex;
     align-items: center;
@@ -1655,9 +1576,11 @@ header {
 .on-premise-grid img {
     width: 68px;
 }
+
 .on-premise-grid1 div:nth-child(2) {
     padding: 24px 24px 24px 12px;
 }
+
 .on-premise-button span {
     padding-bottom: 24px;
 }
@@ -1669,18 +1592,18 @@ header {
     width: 100vw;
     overflow: hidden;
     overflow-x: scroll;
-    /* scroll-margin-bottom: 20px; */
 }
+
 .discover-grid a {
     margin: 0 0 36px 0;
 }
+
 .g-grid-normal img,.g-grid-back img {
     object-fit: cover;
-    /* min-width: 300px; */
-    /* width: auto; */
     min-height: 150px;
     border-radius: 6px 6px 0 0;
 }
+
 .g-grid-back p:nth-of-type(1) {
     display: block;
     color: #4c4c51;
@@ -1690,6 +1613,7 @@ header {
     padding: 0px 12px;
     text-decoration: underline white;
 }
+
 .g-grid-back p:nth-of-type(2) {
     position: relative;
     color: #4c4c51;
@@ -1702,21 +1626,21 @@ header {
     padding: 0px 12px;
     text-decoration: underline white;
 }
+
 /**************************** azure-support */
 .azure-support img {
     max-width: 36px;
     height: 36px;
 }
+
 .azure-support div {
     display: flex;
     align-items: center;
 }
+
 .azure-support h3 {
     margin: 0;
     padding-left: 20px;
 }
-
-/*** FOOTER ***/
-
 
 }
