@@ -1241,6 +1241,16 @@ footer {
 .col-1080-100 {width: 100%;}
 .col-1080-hide {display: none;}
 
+
+.header-container .nav-second ul a:first-child li{
+    display: block;
+}
+
+.button-search {
+    display: block;
+    all: unset;
+}
+
 /*** MAIN CONTENT ***/
 .banner{
     height: 80vh;
@@ -1468,7 +1478,7 @@ header {
     display: none;
 }
 
-.header-container .nav-second {
+.header-container .nav-second ul a:first-child li{
     display: none;
 }
 
